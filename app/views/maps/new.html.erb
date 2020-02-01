@@ -1,1 +1,10 @@
-<h1>Enter City</h1>
+<div class="booyah-box col-10 offset-1">
+  <h1>Enter a city</h1>
+  <%= simple_form_for Map.new do |f| %>
+    <%= f.input :city %>
+    <%= f.submit 'Get Temperature', class: 'btn btn-primary' %>
+  <% end %>
+  <% if @temp != "" %>
+    <p><%= @temp %></p>
+  <% end %>
+</div>

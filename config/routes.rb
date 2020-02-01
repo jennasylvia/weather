@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  root 'maps#index'
+  root 'maps#new'
   resources :maps
 end
